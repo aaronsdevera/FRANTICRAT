@@ -39,6 +39,7 @@ function vibration($gap)
 
 function main
 {
+    #CONFIGURE HERE TO CHANGE LOG WRITE PATH LOCATION
     $log_path = "C:\Logs\fr\fr.log"
 
     If(!(test-path $log_path))
@@ -49,3 +50,5 @@ function main
     # CONFIGURE HERE FOR REST TIME BETWEEN MOVEMENTS
     vibration 60
 }
+
+main
